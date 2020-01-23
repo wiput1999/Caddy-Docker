@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:7.3-fpm
 
 # Install application dependencies
 RUN curl --silent --show-error --fail --location \
@@ -15,4 +15,4 @@ COPY docker/Caddyfile /etc/Caddyfile
 WORKDIR /app/
 RUN chown -R www-data:www-data /app
 
-CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout"]
+CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", "-agree=true", "--log", "stdout"]

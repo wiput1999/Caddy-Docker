@@ -15,5 +15,5 @@ COPY docker/Caddyfile /etc/Caddyfile
 
 WORKDIR /app/
 
-CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout"]
+CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", '-agree=true', "--log", "stdout"]
 
