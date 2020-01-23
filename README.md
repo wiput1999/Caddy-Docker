@@ -2,6 +2,8 @@
 
 Easy to use Caddy Web Server for Docker just 3 simple steps
 
+## Getting started
+
 1. Edit Caddyfile
 
 2. Run
