@@ -17,6 +17,7 @@ docker-compose up
 ```
 
 🎉 Done Hooray~!
+
 ⚠️ Need to be run when DNS has been pointed to server
 
 ## Templates available
